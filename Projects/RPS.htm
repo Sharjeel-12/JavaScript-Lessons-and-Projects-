@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        .center{
+            text-align: center;
+        }
+        body{
+            width: 100vw;
+            
+        }
+        #GameView{
+            
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .gameImg{
+            width: 30vw;
+                height: 500px;
+                margin: 10px;
+                border: 2px solid black;
+        }
+        .gameImg img{
+            display: block;
+            margin: auto;
+            height: 100%;
+        }
+
+        #controlPanel{
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+        #controlPanel button{
+            margin: 50px;
+            font-size: 30px;
+            height: 40px;
+            width: 150px;
+            border-radius: 30px;
+        }
+        #nextRound{
+            display: block;
+            margin: auto;
+            font-size: 30px;
+            height: 140px;
+            width: 150px;
+            border-radius: 30px;
+        }
+        #ScoreBoard{
+            margin: 50px auto;
+            height: 600px;
+            width: 70%;
+            border: 2px solid black;
+
+        }
+        #ScoreBoard p{
+            text-align: center;
+            margin: 50px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        #ScoreBoard span{
+            padding: 0;
+            margin: 5px;
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+       
+    </style>
 </head>
 <body>
-    <h1>Welcome to Rock Paper and Scissors</h1>
+    <h1 class="center">Welcome to Rock Paper and Scissors</h1>
+    <div class="container" id="GameView">
+        <div  id="C1"  class="gameImg">
+            
+            <img id="img-1" src="rock-paper-scissors-296853_1920.png" alt="-" >
+
+        </div>
+        <div id="C2" class="gameImg">
+
+            <img id="img-2" src="rock-paper-scissors-296853_1920.png" alt="-" >
+
+        </div>
+
+
+    </div>
+    <div id="controlPanel">
+        <button id="Rock" class="Playbtn">Rock</button>
+        <button id="Paper" class="Playbtn">Paper</button>
+        <button id="Scissors" class="Playbtn">Scissors</button>
+        <button id="start">
+            Start
+        </button>
+    </div>
+   <button id="nextRound">Next Round</button>
+
+   <div id="ScoreBoard" class="center">
+<h1 class="center">SCORE BOARD</h1>
+   </div>
    <script src="RockPaperAndScissors.js"></script> 
 </body>
 </html>
