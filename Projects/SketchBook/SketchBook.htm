@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 100px;
+            text-align: center;
+        }
+        #gridContainer{
+            padding: 0;
+            margin: auto;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        #BtnContainer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #BtnContainer button{
+
+                height: 50px;
+                width: 150px;
+                font-size: 30px;
+                border-radius: 10px;
+                margin: 50px;
+        }
+        #promBtn{
+            width: 255px;
+                font-size: 30px;
+                border-radius: 10px;
+            height: 150px;
+            display: block;
+            margin: 50px auto;
+        }
+        .child{
+           box-sizing: border-box;
+            margin: 0;
+            border: 2px solid rgb(7, 7, 8);
+            /* flex-shrink: 12; */
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Welcome to MY SKETCHBOOK
+</h1>
+<button id="promBtn">Create New SKETCHBOOK!</button>
+<div id="gridContainer">
+
+</div>
+<div id="BtnContainer">
+    <button id="red" class="PlayBtn">Red</button>
+    <button id="blue" class="PlayBtn">Blue</button>
+    <button id="yellow" class="PlayBtn">Yellow</button>
+    <button id="white" class="PlayBtn">Eraser</button>
+    <button id="reset">Reset </button>
+</div>
+
+    <script src="SketchBook.js"></script>
+</body>
+</html>
