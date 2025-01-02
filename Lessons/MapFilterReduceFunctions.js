@@ -2,8 +2,8 @@
 // Studying the Map, Filter and Reduce Functions
 // *******************************************
 
-// let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13];
-let arr=[1,2,3,4,5];
+let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13];
+// let arr=[1,2,3,4,5];
 
 function addOne(num){
    return num+=1;
@@ -56,3 +56,25 @@ let ProdofArr=arr.reduce((total,element)=>{
 },1)
 console.log("Product of all Array elemets is: ", ProdofArr);
 
+
+
+// Making TripleEvenAdder FUnction using map filter and reduce functions 
+
+function TripleEvenAdder(list){
+    let evenElems=list.filter((element)=>{
+        return element%2===0;
+    })
+    let tripledEven=evenElems.map((elem)=>{
+        return elem=3*elem;
+    })
+     let addedTripleEven=tripledEven.reduce((total,current)=>{
+        return total+current;
+     })
+
+     return(addedTripleEven);
+
+}
+
+
+let result=TripleEvenAdder(arr);
+console.log("TriplevenAdder gives: ",result);
