@@ -1,0 +1,149 @@
+
+
+/* COde for the Contact page */
+.contact-tab{
+    border-radius: 40px;
+  /* height: 100%; */
+    position: relative;
+    width: 60%;
+    /* height: calc(100vh - 150px); */
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+    align-items: center;
+    border: 6px solid rgb(202, 151, 74);
+    font-size: 1rem;
+
+}
+.contact-tab::before{
+ 
+    content: "";
+    background: url("coffe-1354786_1920.jpg") no-repeat center center/cover;
+    border-radius: 34px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.contact-tab h1{
+    position: relative;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    color: antiquewhite;
+    text-align: center;
+    border: 5px solid rgb(43, 39, 8);
+    border-radius: 10px;
+    padding: 10px 100px 10px 100px;
+   background-color: rgb(216, 129, 22);
+}
+
+.contact-tab .section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 10px 70px 20px 70px;
+ flex-basis: 95%;
+    text-align: justify;
+    clip-path: polygon(
+        20% 0%, 80% 0%,100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%
+    );
+background-color: white;
+    /* border: 2px solid rgb(167, 144, 17); */
+}
+.contact-tab .border{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    width: 65%;
+    padding: 7px 10px 7px 10px;
+    clip-path: polygon(
+        20% 0%, 80% 0%,100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%
+    );
+
+    /* border: 2px solid rgb(167, 144, 17); */
+    background-color: rgb(31, 15, 4);
+   
+}
+
+.contact-tab .center{
+    text-align: center !important;
+    
+}
+.contact-tab .decoration{
+    height: 70px;
+    display: block;
+    margin: auto;
+    z-index: 1;
+}
+.contact-tab #logo_1{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.contact-tab #logo_2{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+.contact-tab #logo{
+    /* border: 2px solid red; */
+    position: absolute;
+   
+    top: 140px;
+}
+
+/* Code for Responsiveness in Home Page  */
+@media screen and (max-width:1055px) {
+    .contact-tab .border{
+        width:405px;
+    }
+}
+@media screen and (max-width:733px) {
+    .contact-tab h1{
+        width: 225px;
+    }
+    .contact-tab .border{
+        width:285px;
+    }
+    .contact-tab #logo_1{
+        position: absolute;
+        top: 6px;
+        left: 8px;
+    }
+    .contact-tab #logo_2 {
+        position: absolute;
+        top: 51px;
+        right: -24px;
+}
+}
+@media screen and (max-width:733px){
+    .contact-tab .border{
+        width:220px;
+    }
+}
+@media screen and (max-width:471px){
+    
+    .contact-tab #logo_1 {
+        position: absolute;
+        top: 6px;
+        left: 5px;
+    }
+    .contact-tab #logo_2{
+        display: none;
+    }
+    .contact-tab h1 {
+        width: 207px;
+        font-size: 1.5rem;
+    }
+
+}
+
